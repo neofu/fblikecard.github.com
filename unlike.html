@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>My Like Card</title>
+<link rel="stylesheet" type="text/css" href="./css/common.css">
+</head>
+
+<body>
+	<div id="fb-root"></div>
+
+	<script type="text/javascript">
+		window.fbAsyncInit = function() {
+			FB.init({appId: '445020752195462', status: true, cookie: true, xfbml: true});
+			FB.Canvas.setAutoResize(true,100);	
+		};
+	  (function(d){
+		 var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+		 js = d.createElement('script'); js.id = id; js.async = true;
+		 js.src = '//connect.facebook.net/ko_KR/all.js';
+		 d.getElementsByTagName('head')[0].appendChild(js);
+	   }(document));
+	</script>
+
+<div id="unlike">
+</div>
+</body>
+</html>
